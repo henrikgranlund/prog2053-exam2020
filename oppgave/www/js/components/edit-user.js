@@ -39,9 +39,9 @@ class EditUser extends LitElement {
     `;
   }
 
+  //Handling the update using data from the from above
   updateUser(e) {
     const dataForm = new FormData(e.target.form);
-    console.log(e)
     fetch('api/updateUser.php', {
      method: 'POST',
      body: dataForm
@@ -53,7 +53,5 @@ class EditUser extends LitElement {
             console.log("Oops! Something went wrong. Please try again.");
         }
       })
-  }
-
-}
+};
 customElements.define('edit-user', EditUser);
