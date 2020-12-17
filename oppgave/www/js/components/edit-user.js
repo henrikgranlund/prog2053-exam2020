@@ -39,7 +39,7 @@ class EditUser extends LitElement {
     `;
   }
 
-  //Handling the update using data from the from above
+  //Handling the update using data from the form above
   updateUser(e) {
     const dataForm = new FormData(e.target.form);
     fetch('api/updateUser.php', {
