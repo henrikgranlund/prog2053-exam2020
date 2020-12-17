@@ -1,4 +1,4 @@
-# Studentnummer: 10051
+# Candidate number: 10051
 
 
 # PROG2053 eksamen v2020
