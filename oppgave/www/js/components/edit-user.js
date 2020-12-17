@@ -46,12 +46,11 @@ class EditUser extends LitElement {
      method: 'POST',
      body: dataForm
     }).then(res=>res.json())
-      .then(data=>{
         if (data.status=='success') {
             console.log("User got updated!");
         } else {
             console.log("Oops! Something went wrong. Please try again.");
         }
-      })
+      }
 };
 customElements.define('edit-user', EditUser);
