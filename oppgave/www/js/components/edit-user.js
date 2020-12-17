@@ -15,7 +15,7 @@ class EditUser extends LitElement {
       </head>
       <body>
         <h1 style="text-align: center;"> Edit a user </h1>
-        <form onsubmit="javascript: return false;" id="userForm" method="POST">
+        <form action="submit" id="userForm" method="POST">
             <div style="text-align: center;">
                 <label for="email">Email</label>
                 <input type="email" id="uname" name="uname" value="${user.uname}">
